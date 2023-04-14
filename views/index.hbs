@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{!-- <link rel="stylesheet" href="./style.css"> --}}
+    <style>
+        body{
+    display:flex;
+    flex-direction: column;
+    margin: 2px;
+   
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(91, 174, 180);
+    height: 50px;
+
+}
+.menu a{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    text-decoration:none;
+    flex-wrap: wrap;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.container{
+    background-color: rgb(160, 239, 222);
+    width: 1527px;
+    height: 702px;
+}
+.information{
+    /* border: 2px solid gold; */
+    display: flex;
+    height: 80vh;
+    align-items: center;
+}
+.part1{
+    width :450px;
+    /* border: 2px solid pink; */
+    padding: 30px;
+    margin-top: 70px;
+    margin-left: 125px;
+    margin-bottom: 80px;
+    margin-right: 84px;
+    height: 573px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.part2{
+    width: 450px;
+    /* border: 2px solid pink; */
+    padding: 30px;
+    margin-top: 70px;
+    margin-right: -130px;
+    margin-bottom: 80px;
+    margin-left: 5px;
+    height: 573px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    text-align: center;
+    
+}
+.p1{
+    color: coral;
+    font-style: italic;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 20px;
+    
+}
+.p2{
+    color:rgb(222, 179, 115);
+    font-style: italic;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+h2{
+    color: rgb(226, 139, 26);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+}
+.part2 ol li{
+    font-size: larger;
+    font-style: oblique;
+    color: rgb(14, 13, 11);
+    margin-bottom: 20px;
+}
+    </style>
+
+</head>
+<body>
+    <div class="menu">
+        <a href="/add">ADD PATIENT</a>
+        <a href="/search">SEARCH PATIENT</a>
+        <a href="/update">UPDATE PATIENT</a>
+        <a href="/delete">DELETE PATIENT</a>
+        <a href="/view">VIEW PATIENT</a>
+    </div>
+    <div class="container">
+         <div class="information">
+            <div class="part1">
+               <div class="q1">
+                <p class="p1">INDIVIDUALLY WE ARE ONE DROP. TOGETHER WE ARE AN OCEAN. </p>
+                <p class="p2">     - R. Saturo</p>
+                <p class="p1">ONCE YOU CHOOSE HOPE. ANYTHING IS POSSIBLE </p>
+                <p class="p2">     - Christopher Reeve</p>
+                <p class="p1">THE VERY FIRST REQUIREMENT IN A HOSPITAL IS THAT IT SHOULD DO THE SICK NO HARM. </p>
+                <p class="p2">     - Florence Nightangle </p>
+                <p class="p1">DOCTORS AND NURSES DO CRAZY HOURS AND KEEP AN IDEAL AFLOAT THROUGH LOVE AND CARE</p>
+                <p class="p2">     - Bendict Cumberbatch</p>
+                <p class="p1">WE"ER ALL HERE TO HELP ONE ANOTHER... WHEN WE ARE TOGETHER WE CAN MAKE THINGS HAPPEN</p>
+                <p class="p2">     - ST. Jude p. Aspen</p>
+               </div>
+            </div>
+            <div class="part2">
+                <h2>GUIDELINES</h2>
+                 <ol>
+                    <li>Enter patient's details in ADD PATEINT bar. Carefully enter patient name, phoneno,gender</li>
+                    <li>To see whether your details are present perfectly use SEARCH PATEINT bar and enter your given phone number</li>
+                    <li>To update details, use UPDATE PATIENT bar. First search for your patient with phoneno and then update. </li>
+                    <li>When a Patient is discharged, You can delete the patien from DELETE PATIENT bar with phoneno</li>
+                    <li>To view all the patient just go to VIEW bar. (CLICK back to hompage after viewing) </li>
+                 </ol>
+            </div>
+         </div>
+    </div>
+</body>
+</html>

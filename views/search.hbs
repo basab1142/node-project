@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <form action="/searchstudent"  >
+   <h3>SEARCH PATIENT</h3>
+   
+    <hr>
+ 
+    <label for="text"><b>PHONE NO</b></label>
+    <input type="text" placeholder="type Phone No  to be searched" name="phone" id="phone" required>
+
+    <button type="submit" class="registerbtn">SEACRH PATIENT</button>
+    <a href="./" style="color:black">BACK TO HOME PAGE</a>
+
+    <br>
+     {{#if mesg1}}
+     {{#data}}
+     <h3>Data Found!</h3>
+     <table>
+  <tr>
+    <th>Patient id</th>
+    <th>USERNAME</th>
+    <th>Phoneno</th>
+    <th>emailid</th>
+    <th>gender</th>
+    <th>problem</th>
+
+  </tr>
+  <tr>
+      <td>{{pid}}</td>
+      <td>{{username}}</td>
+      <td>{{phoneno}}</td>
+      <td>{{emailid}}</td>
+      <td>{{gender}}</td>
+      <td>{{problem}}</td>
+  </tr>
+  
+</table>
+
+     {{/data}}
+     {{/if}}
+
+     {{#if mesg2}}
+     <h3>Data Not Found!</h3>
+     {{/if}}
+    </form>
+  </div>
+</body>
+</html>
